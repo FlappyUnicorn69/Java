@@ -50,18 +50,17 @@ class GuessGame {
                 System.out.println("Player two got it right? " + p2isRight);
                 System.out.println("Player three got it right? " + p3isRight);
                 System.out.println("Game is over.");
-                break; // game over, so break out of the loop
+                break;
             } else {
-        // we must keep going because nobody got it right!
+        
                 System.out.println("Players will have to try again.");
-            } // end if/else
-        } // end loop
-    } // end method
-} // end class
-
+            }
+        }
+    }
+}
 
 class Player {
-    int number = 0; // where the guess goes
+    int number = 0;
     
     public void guess() {
         number = (int) (Math.random() * 10);
