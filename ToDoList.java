@@ -30,7 +30,7 @@ public class ToDoList {
             System.out.println("Nessuna attività presente.");
         } else {
             System.out.println("Lista delle attività:");
-            for (int i = 0; i < tasks.size(); i++) {
+            for (int i = 1; i < tasks.size(); i++) {
                 System.out.println(i + ". " + tasks.get(i));
             }
         }
