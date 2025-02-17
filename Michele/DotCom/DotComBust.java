@@ -1,12 +1,12 @@
+
+
 import java.util.ArrayList;
 
 public class DotComBust{
 
-    GameHelper helper = new GameHelper();
-
-    ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
-
-    int numOfGuess = 0;
+    private GameHelper helper = new GameHelper();
+    private ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
+    private int numOfGuess = 0;
 
 
     public void setUpGame(){
@@ -23,6 +23,10 @@ public class DotComBust{
         dotComList.add(Dot1); //aggiunto ad ArrayList dotComList
         dotComList.add(Dot2);
         dotComList.add(Dot3);
+
+        System.out.println("devi affondare le navi nemiche");
+        System.out.println("la tabella di gioco è un 7x7");
+        System.out.println("esempio di tentativo  a1 , b4 , g7");
 
         for (DotCom dotComToSet : dotComList){
             ArrayList<String> newLocation = helper.placeDotCom(3);
