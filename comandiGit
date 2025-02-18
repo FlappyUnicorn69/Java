@@ -74,6 +74,6 @@ git log –online –graph –decorate –all —> per vedere i struttura grapho
 git stash —-> salva le modifiche non committate e ripristina lo stato all’ultimo commit (le			 modifiche non vengono perse ma rimangono salvate in memoria
 git stash pop —-> applica le modifiche che erano in memoria
 
-
-
-
+code Nomefile.java  ----> genero un file java 
+javac Nomefile.java  ----> compilo il file.java nel suo file.class
+java Nomefile   ----> avvio il mio programma 
