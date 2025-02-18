@@ -5,6 +5,7 @@ public class Of76 extends Clown{
         i[1] = new Clown();
         i[2] = new Of76();
 
+        
         for (int x=0; x<3; x++){
             System.out.println(i[x].method() + " " + i[x].getClass());
         }
