@@ -1,7 +1,6 @@
-import java.util.ArrayList;
 import java.util.Collections;
-import java.io.IOException;
 import java.util.ArrayList;
+import java.io.IOException;
 import java.util.List;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -12,7 +11,7 @@ public class Gioco1{
         ArrayList<Integer> lista1 = new ArrayList<>();
         ArrayList<Integer> lista2 = new ArrayList<>();
 
-        try {
+        //try {
             List<String> lines = Files.readAllLines(Paths.get("input.txt"));
             for (String line : lines){
 
@@ -25,14 +24,13 @@ public class Gioco1{
                 lista2.add(b);
 
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //} catch (IOException e) {
+        //    e.printStackTrace();
+        //}
 
         Collections.sort(lista1);   
         Collections.sort(lista2);
         
-
         int tot = 0;
         int cont = 0;
         while (cont < lista1.size()){
