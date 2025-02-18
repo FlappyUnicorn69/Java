@@ -1,12 +1,15 @@
-import java.util.*;
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class AdvendtCode1 {
  public static void main(String[] args) {
     
-    List<Integer> rightList = new ArrayList<>();
-    List<Integer> leftList = new ArrayList<>();
+    ArrayList<Integer> rightList = new ArrayList<Integer>();
+    ArrayList<Integer> leftList = new ArrayList<Integer>();
 
+
+      ArrayList.sort(leftList);
+     ArrayList.sort(rightList);
 
   int totDist = 0;
   if (int = i; i <= leftList.size(); i++) {
