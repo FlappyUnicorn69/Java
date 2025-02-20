@@ -13,7 +13,10 @@ public class AdvendtCode1 {
         ArrayList<Integer> rightList = new ArrayList<Integer>(); // Better use the interface on the left hand side
         ArrayList<Integer> leftList = new ArrayList<Integer>();
 
-          try (BufferedReader br = new BufferedReader(new FileReader(filePath))) { // Explain Try-with-resources
+        ty (BufferedReader br = new BufferedReader(new FileReader(filePath))) { // Explain Try-with-resources
+            if(true){
+                throw new IOException("something went wrong");
+            }
             // Explain reader
             // Explain BufferedReader
             String line;
