@@ -2,26 +2,31 @@ package AdventCode1;
 
 public class MyTest {
 
-
-    public static void a(){
-        System.out.println("in a, before b");
-        try{
-            MyTest.b();
-        }catch(Exception ex){
-            System.out.println("catch");    
+    public static void insertOrder() {
+        System.out.println("Inserting order");
+        try {
+            MyTest.processUserOrder();
+            System.out.println("Request processed successfully");
+        } catch (Exception ex) {
+            System.out.println("Order insertion failed: " + ex.getMessage());
         }
-        System.out.println("in a, after b");
+    
     }
-    public static void b(){
-        System.out.println("in b, before c");
-            MyTest.c();
-        System.out.println("in b, after c");
+
+    public static void processUserOrder() {
+        MyTest.debitUser();
+        MyTest.saveOrder();
     }
-    public static void c(){
-        throw new IllegalStateException("an exception");        
+
+    public static void saveOrder() {
+        System.out.println("Order saved");
+    }
+
+    public static void debitUser() {
+        throw new IllegalStateException("Insufficient funds");
     }
 
     public static void main(String[] args) {
-        MyTest.a();
+        MyTest.insertOrder();
     }
 }
